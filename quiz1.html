@@ -132,7 +132,7 @@ color:black;
 	<div data-role="page" data-theme="a">
 <img id="homeBg" />
 		
-		<div data-role="content" data-theme="a" align="center" style="margin-top:400px;">
+		<div data-role="content" data-theme="a" align="center" style="margin-top:600px;">
 		
 		<a href="#questionAnimals" data-role="button" width="100%" style="background-color:red;"><div id="btnAnimals" style="font-size:30px;">START</div></a><br />
 	<a href="#" data-role="button" data-mini="true" id="backhome" style="background-color:red;"><label style="font-size:30px;">Back to home</label></a>
@@ -145,7 +145,7 @@ color:black;
 
 <div data-role="page" data-theme="a" id="questionAnimals">
 		<img id="gameBg" />
-		<div data-role="content" data-theme="a">
+		<div data-role="content" data-theme="a" >
 		<div id="relative" style="color:white;">
 		<center>
 		<h1>TIME</h1><br />
@@ -349,9 +349,9 @@ setTimeout(function(){
 var a=fruits.splice((Math.random() * fruits.length),1);
 if(a=="q1"){
 $(".q1").show();
-document.getElementById("questions").innerHTML="The purpose of the immune system is to";
-$("#c1").text("a.	Fight off sickness");
-$("#c2").text("b.	Help germs invade your body");
+document.getElementById("questions").innerHTML="It is the initial assistance or treatment given to a casualty for any injury or sudden illness befor the arrival of an ambulance,doctor or other qualified personnel.";
+$("#c1").text("a.	First Aid");
+$("#c2").text("b.	Medical Care");
 $("#check1").click(function(){
 clearInterval(time);
 score=score+1;
@@ -394,9 +394,9 @@ clearInterval(time);
 
 }else if(a=="q2"){
 $(".q2").show();
-document.getElementById("questions").innerHTML="The immune system is made up of";
-$("#c4").text("A.	Organs");
-$("#c3").text("B.	Cells");
+document.getElementById("questions").innerHTML="Also known as excessive breathing, causes a reduction of carbon dioxide concentration (below normal) of the blood.";
+$("#c4").text("A.	Fainting");
+$("#c3").text("B.	Hyperventilation");
 $("#check3").click(function(){
 window.localStorage.setItem("score",score);
 document.getElementById("tryAgain").innerHTML="GAME OVER!";
@@ -439,9 +439,9 @@ clearInterval(time);
 
 }else if(a=="q3"){
 $(".q3").show();
-document.getElementById("questions").innerHTML="Your body couldn’t breathe without this system. Which one is it?";
-$("#c5").text("A. Respiratory system");
-$("#c6").text("B. Perspiration system");
+document.getElementById("questions").innerHTML="Is a brief loss of consciousness that is caused by a temporary reduction of blood flow to the brain.";
+$("#c5").text("A. Fainting");
+$("#c6").text("B. Shock");
 $("#check5").click(function(){
 clearInterval(time);
 score=score+1;
@@ -484,9 +484,9 @@ clearInterval(time);
 }, 1000);
 }else if(a=="q4"){
 $(".q4").show();
-document.getElementById("questions").innerHTML="If you are a good jumper, you are strong in which area?";
-$("#c7").text("A.	Balance");
-$("#c8").text("B.	Power");
+document.getElementById("questions").innerHTML="Occurs when the circulatory system fails, and insufficient oxygen reaches the tissues. If the condition is not treated quickly, vital organs can fail, ultimately causing death";
+$("#c7").text("A.	Hyperventilation");
+$("#c8").text("B.	Shock");
 $("#check7").click(function(){
 window.localStorage.setItem("score",score);
 document.getElementById("tryAgain").innerHTML="GAME OVER!";
@@ -528,9 +528,9 @@ clearInterval(time);
 }, 1000);
 }else if(a=="q5"){
 $(".q5").show();
-document.getElementById("questions").innerHTML="Which of these may be signs of alcohol or drug abuse?";
-$("#c9").text("A.	Changes in eating habits and sleep patterns");
-$("#c10").text("B.	Increased hostility");
+document.getElementById("questions").innerHTML="Caused by the loss of blood volume (such as through bleeding) or profound dehydration";
+$("#c9").text("A.	Hypovolemic shock");
+$("#c10").text("B.	Cardiogenic shock");
 $("#check9").click(function(){
 clearInterval(time);
 score=score+1;
@@ -573,9 +573,9 @@ clearInterval(time);
 }, 1000);
 }else if(a=="q6"){
 $(".q6").show();
-document.getElementById("questions").innerHTML="Cholesterol is a fatlike substance that is found in animal products and is also made in your liver. The two main sources of cholesterol are dietary cholesterol and lipids.";
-$("#c11").text("A. False");
-$("#c12").text("B. True");
+document.getElementById("questions").innerHTML="A result of a weakened heart that is unable to pump blood as efficiently as it once did. Commonly occurs after a massive heart attack";
+$("#c11").text("A. Hypovolemic shock");
+$("#c12").text("B. Cardiogenic shock");
 $("#check11").click(function(){
 window.localStorage.setItem("score",score);
 document.getElementById("tryAgain").innerHTML="GAME OVER";
@@ -619,10 +619,10 @@ clearInterval(time);
 }
 }, 1000);}else if(a=="q7"){
 $(".q7").show();
-document.getElementById("questions").innerHTML="The Body Mass Index (BMI) is a number calculated without regard to age or sex to make a direct measure of body fat.";
+document.getElementById("questions").innerHTML="A result of the lack of distribution of blood to the organs";
 
-$("#c13").text("A. False");
-$("#c14").text("B. True");
+$("#c13").text("A. Distributive shock");
+$("#c14").text("B. Obstructive shock");
 $("#check13").click(function(){
 score=score+1;
 clearInterval(time);
@@ -667,10 +667,10 @@ clearInterval(time);
 }, 1000);
 }else if(a=="q8"){
 $(".q8").show();
-document.getElementById("questions").innerHTML="The 50 metre sprint test can indicate an athletes";
+document.getElementById("questions").innerHTML="Results from an obstruction to blood flow at a site other than the heart";
 
-$("#c15").text("A. agility");
-$("#c16").text("B. speed");
+$("#c15").text("A. Distributive shock");
+$("#c16").text("B. Obstructive shock");
 $("#check15").click(function(){
 window.localStorage.setItem("score",score);
 document.getElementById("tryAgain").innerHTML="GAME OVER";
@@ -714,10 +714,10 @@ clearInterval(time);
 }, 1000);
 }else if(a=="q9"){
 $(".q9").show();
-document.getElementById("questions").innerHTML="PROMOTION OF FITNESS IS ONE OF THE MAJOR PROGRAMS OF PHYSICAL EDUCATION";
+document.getElementById("questions").innerHTML="Is a break or crack in the continuity of the bone";
 
-$("#c17").text("A. False");
-$("#c18").text("B. True");
+$("#c17").text("A. Strains");
+$("#c18").text("B. Fractures");
 $("#check17").click(function(){
 window.localStorage.setItem("score",score);
 document.getElementById("tryAgain").innerHTML="GAME OVER";
@@ -762,10 +762,10 @@ clearInterval(time);
 }, 1000);
 }else if(a=="q10"){
 $(".q10").show();
-document.getElementById("questions").innerHTML="PHYSICAL FITNESS IS A WAY OF LIFE CHARACTERIZED BY THE ABILITY OF AN INDIVIDUAL TO PERFORM";
+document.getElementById("questions").innerHTML="The displacement of one or more bones at a joint. It usually occurs in the shoulders, elbow, thumb, fingers and the lower jaw.";
 
-$("#c19").text("A. True");
-$("#c20").text("B. False");
+$("#c19").text("A. Dislocations");
+$("#c20").text("B. Sprains");
 $("#check19").click(function(){
 clearInterval(time);
 
@@ -809,10 +809,10 @@ clearInterval(time);
 }, 1000);
 }else if(a=="q11"){
 $(".q11").show();
-document.getElementById("questions").innerHTML="When you got a victim who is injured in his eye you should try to remove the embedded object";
+document.getElementById("questions").innerHTML="Occurs at a joint where there is tearing or over-stretching of the ligaments and tissues.";
 
-$("#c21").text("A. False");
-$("#c22").text("B. True");
+$("#c21").text("A. Sprains");
+$("#c22").text("B. Dislocations");
 $("#check21").click(function(){
 clearInterval(time);
 
@@ -856,10 +856,10 @@ clearInterval(time);
 }, 1000);
 }else if(a=="q12"){
 $(".q12").show();
-document.getElementById("questions").innerHTML="Eggs, Meat, Milk these are examples of :";
+document.getElementById("questions").innerHTML="Caused by flame, contact with hot objects, friction etc.";
 
-$("#c23").text("A. Grow Foods");
-$("#c24").text("B. Go Foods");
+$("#c23").text("A. Dry Burn");
+$("#c24").text("B.Chemical Burn");
 $("#check23").click(function(){
 clearInterval(time);
 
@@ -903,10 +903,10 @@ clearInterval(time);
 }, 1000);
 }else if(a=="q13"){
 $(".q13").show();
-document.getElementById("questions").innerHTML="What is the regular hous of sleep ?";
+document.getElementById("questions").innerHTML="Low-voltage current, lightning strike";
 
-$("#c25").text("A. 8");
-$("#c26").text("B. 5");
+$("#c25").text("A. Electrical Burn");
+$("#c26").text("B. Dry Burn");
 $("#check25").click(function(){
 clearInterval(time);
 
@@ -950,10 +950,10 @@ clearInterval(time);
 }, 1000);
 }else if(a=="q14"){
 $(".q14").show();
-document.getElementById("questions").innerHTML="Which one is NOT a component of fitness";
+document.getElementById("questions").innerHTML="Sunburn over-exposure to ultra-violet (UV) lamp and exposure to radioactive source.";
 
-$("#c27").text("A. Co-ordination");
-$("#c28").text("B. Balance");
+$("#c27").text("A. Radiation Burn");
+$("#c28").text("B. Cold Injury");
 $("#check27").click(function(){
 clearInterval(time);
 
@@ -997,10 +997,10 @@ clearInterval(time);
 }, 1000);
 }else if(a=="q15"){
 $(".q15").show();
-document.getElementById("questions").innerHTML="This system controls everything you do:";
+document.getElementById("questions").innerHTML="Contact with steam and hot fluids";
 
-$("#c29").text("A. Nervous system");
-$("#c30").text("B. Olfactory system");
+$("#c29").text("A. Scalds");
+$("#c30").text("B. Electrical Burn");
 $("#check29").click(function(){
 clearInterval(time);
 
@@ -1032,6 +1032,230 @@ alert("times up!");
 window.localStorage.setItem("score",score);
 document.getElementById("tryAgain").innerHTML="GAME OVER";
 document.getElementById("score2").innerHTML= score;
+var getScore=window.localStorage.getItem("score");
+document.getElementById("score").value=getScore;
+var getlastscore=window.localStorage.getItem("lastscore");
+document.getElementById("lastscore").value=getlastscore;
+var getUsername=window.localStorage.getItem("datauser");
+document.getElementById("username").value=getUsername;
+location.href="#saveDialog";
+clearInterval(time);
+}
+}, 1000);
+}else if(a=="q16"){
+$(".q16").show();
+document.getElementById("questions").innerHTML="Casualties should always be treated in the order of priority, usually given by the “3 Bs”";
+
+$("#c31").text("False");
+$("#c32").text("True");
+$("#check31").click(function(){
+window.localStorage.setItem("score",score);
+document.getElementById("tryAgain").innerHTML="TRY AGAIN";
+var getScore=window.localStorage.getItem("score");
+document.getElementById("score").value=getScore;
+var getlastscore=window.localStorage.getItem("lastscore");
+document.getElementById("lastscore").value=getlastscore;
+var getUsername=window.localStorage.getItem("datauser");
+document.getElementById("username").value=getUsername;
+location.href="#saveDialog";
+clearInterval(time);
+
+$(".q16").hide();
+});
+$("#check32").click(function(){
+clearInterval(time);
+score=score+1;
+splice();
+
+$(".q16").hide();
+});
+var timer=0;
+var time=setInterval(function () {
+timer=timer+10;
+$("#prog").val(timer);
+if(timer==100){
+alert("times up!");
+window.localStorage.setItem("score",score);
+document.getElementById("tryAgain").innerHTML="TRY AGAIN";
+var getScore=window.localStorage.getItem("score");
+document.getElementById("score").value=getScore;
+var getlastscore=window.localStorage.getItem("lastscore");
+document.getElementById("lastscore").value=getlastscore;
+var getUsername=window.localStorage.getItem("datauser");
+document.getElementById("username").value=getUsername;
+location.href="#saveDialog";
+clearInterval(time);
+}
+}, 1000);
+}else if(a=="q17"){
+$(".q17").show();
+document.getElementById("questions").innerHTML="Do not jeopardize your own life while rendering First Aid. In the event of immediate danger, get out of site immediately.";
+
+$("#c33").text("False");
+$("#c34").text("True");
+$("#check33").click(function(){
+window.localStorage.setItem("score",score);
+document.getElementById("tryAgain").innerHTML="TRY AGAIN";
+var getScore=window.localStorage.getItem("score");
+document.getElementById("score").value=getScore;
+var getlastscore=window.localStorage.getItem("lastscore");
+document.getElementById("lastscore").value=getlastscore;
+var getUsername=window.localStorage.getItem("datauser");
+document.getElementById("username").value=getUsername;
+location.href="#saveDialog";
+clearInterval(time);
+
+$(".q17").hide();
+});
+$("#check34").click(function(){
+clearInterval(time);
+score=score+1;
+splice();
+
+$(".q17").hide();
+});
+var timer=0;
+var time=setInterval(function () {
+timer=timer+10;
+$("#prog").val(timer);
+if(timer==100){
+alert("times up!");
+window.localStorage.setItem("score",score);
+document.getElementById("tryAgain").innerHTML="TRY AGAIN";
+var getScore=window.localStorage.getItem("score");
+document.getElementById("score").value=getScore;
+var getlastscore=window.localStorage.getItem("lastscore");
+document.getElementById("lastscore").value=getlastscore;
+var getUsername=window.localStorage.getItem("datauser");
+document.getElementById("username").value=getUsername;
+location.href="#saveDialog";
+clearInterval(time);
+}
+}, 1000);
+}else if(a=="q18"){
+$(".q18").show();
+document.getElementById("questions").innerHTML="Save the conscious casualties before the unconscious ones as they have a higher chance of recovery.";
+
+$("#c35").text("False");
+$("#c36").text("True");
+$("#check35").click(function(){
+window.localStorage.setItem("score",score);
+document.getElementById("tryAgain").innerHTML="TRY AGAIN";
+var getScore=window.localStorage.getItem("score");
+document.getElementById("score").value=getScore;
+var getlastscore=window.localStorage.getItem("lastscore");
+document.getElementById("lastscore").value=getlastscore;
+var getUsername=window.localStorage.getItem("datauser");
+document.getElementById("username").value=getUsername;
+location.href="#saveDialog";
+clearInterval(time);
+
+$(".q18").hide();
+});
+$("#check36").click(function(){
+clearInterval(time);
+score=score+1;
+splice();
+
+$(".q18").hide();
+});
+var timer=0;
+var time=setInterval(function () {
+timer=timer+10;
+$("#prog").val(timer);
+if(timer==100){
+alert("times up!");
+window.localStorage.setItem("score",score);
+document.getElementById("tryAgain").innerHTML="TRY AGAIN";
+var getScore=window.localStorage.getItem("score");
+document.getElementById("score").value=getScore;
+var getlastscore=window.localStorage.getItem("lastscore");
+document.getElementById("lastscore").value=getlastscore;
+var getUsername=window.localStorage.getItem("datauser");
+document.getElementById("username").value=getUsername;
+location.href="#saveDialog";
+clearInterval(time);
+}
+}, 1000);
+}else if(a=="q19"){
+$(".q19").show();
+document.getElementById("questions").innerHTML="Remember: One of your aims is to preserve life, and not endanger your own in the process of rendering First Aid.";
+$("#c37").text("False");
+$("#c38").text("True");
+$("#check37").click(function(){
+window.localStorage.setItem("score",score);
+document.getElementById("tryAgain").innerHTML="TRY AGAIN";
+var getScore=window.localStorage.getItem("score");
+document.getElementById("score").value=getScore;
+var getlastscore=window.localStorage.getItem("lastscore");
+document.getElementById("lastscore").value=getlastscore;
+var getUsername=window.localStorage.getItem("datauser");
+document.getElementById("username").value=getUsername;
+location.href="#saveDialog";
+clearInterval(time);
+
+$(".q19").hide();
+});
+$("#check38").click(function(){
+clearInterval(time);
+score=score+1;
+splice();
+
+$(".q19").hide();
+});
+var timer=0;
+var time=setInterval(function () {
+timer=timer+10;
+$("#prog").val(timer);
+if(timer==100){
+alert("times up!");
+window.localStorage.setItem("score",score);
+document.getElementById("tryAgain").innerHTML="TRY AGAIN";
+var getScore=window.localStorage.getItem("score");
+document.getElementById("score").value=getScore;
+var getlastscore=window.localStorage.getItem("lastscore");
+document.getElementById("lastscore").value=getlastscore;
+var getUsername=window.localStorage.getItem("datauser");
+document.getElementById("username").value=getUsername;
+location.href="#saveDialog";
+clearInterval(time);
+}
+}, 1000);
+}else if(a=="q20"){
+$(".q20").show();
+document.getElementById("questions").innerHTML="If possible, lead the casualty to a quiet place where he may be better able to regain control of his breathing";
+
+$("#c39").text("False ");
+$("#c40").text("True");
+$("#check39").click(function(){
+window.localStorage.setItem("score",score);
+document.getElementById("tryAgain").innerHTML="TRY AGAIN";
+var getScore=window.localStorage.getItem("score");
+document.getElementById("score").value=getScore;
+var getlastscore=window.localStorage.getItem("lastscore");
+document.getElementById("lastscore").value=getlastscore;
+var getUsername=window.localStorage.getItem("datauser");
+document.getElementById("username").value=getUsername;
+location.href="#saveDialog";
+clearInterval(time);
+
+$(".q20").hide();
+});
+$("#check40").click(function(){
+clearInterval(time);
+score=score+1;
+splice();
+
+$(".q20").hide();
+});
+var timer=0;
+var time=setInterval(function () {
+timer=timer+10;
+$("#prog").val(timer);
+if(timer==100){
+alert("times up!");
+window.localStorage.setItem("score",score);
+document.getElementById("tryAgain").innerHTML="TRY AGAIN";
 var getScore=window.localStorage.getItem("score");
 document.getElementById("score").value=getScore;
 var getlastscore=window.localStorage.getItem("lastscore");
