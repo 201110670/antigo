@@ -341,7 +341,7 @@ $("#playAgain").click(function(){
 		splice();
 });
 //questions
-var fruits = ["q1", "q2","q3","q4","q5","q6","q7","q8","q9","q10","q11","q12","q13","q14","q15","q16","q17","q18","q19","q20"];
+var fruits = ["q1","q2","q3","q4","q5","q6","q7","q8","q9","q10","q11","q12","q13","q14","q15","q16","q17","q18","q19","q20"];
 var score=0;
 function splice(){
 document.getElementById("asd").innerHTML=score;
@@ -1270,6 +1270,7 @@ clearInterval(time);
 }else if(a=="" || fruits.length==0){
 fruits.splice(0,1);
 window.localStorage.setItem("score",score);
+document.getElementById("tryAgain").innerHTML="GAME OVER";
 var getScore=window.localStorage.getItem("score");
 document.getElementById("score").value=getScore;
 var getlastscore=window.localStorage.getItem("lastscore");
