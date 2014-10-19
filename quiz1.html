@@ -132,7 +132,7 @@ color:black;
 	<div data-role="page" data-theme="a">
 <img id="homeBg" />
 		
-		<div data-role="content" data-theme="a" align="center" style="margin-top:600px;">
+		<div data-role="content" data-theme="a" align="center" style="margin-top:400px;">
 		
 		<a href="#questionAnimals" data-role="button" width="100%" style="background-color:red;"><div id="btnAnimals" style="font-size:30px;">START</div></a><br />
 	<a href="#" data-role="button" data-mini="true" id="backhome" style="background-color:red;"><label style="font-size:30px;">Back to home</label></a>
@@ -300,11 +300,7 @@ color:black;
 </div> 
 
 <script>
-	$("#playAgain").click(function(){
-		location.href="index.html";
-		var score=window.localStorage.getItem("score");
-		var changeScore=window.localStorage.setItem("lastscore",score);
-	});
+	
 	$("#homes").click(function(){
 		location.href="index.html";
 	});
@@ -338,7 +334,12 @@ location.href="index.html";
 $("#btnAnimals").click(function(){
 splice();
 });
-
+$("#playAgain").click(function(){
+		var score=window.localStorage.getItem("score");
+		var changeScore=window.localStorage.setItem("lastscore",score);
+		location.href="#questionAnimals"
+		splice();
+});
 //questions
 var fruits = ["q1", "q2","q3","q4","q5","q6","q7","q8","q9","q10","q11","q12","q13","q14","q15","q16","q17","q18","q19","q20"];
 var score=0;
